@@ -37,7 +37,7 @@ const ChatForm = () => {
     <form className="flex gap-2" onSubmit={handleFormSubmit}>
       <textarea
         ref={textareaRef}
-        placeholder="Ask me anything..."
+        placeholder="Message Ploe..."
         value={inputText}
         onChange={(e) => setInputText(e.target.value)}
         onKeyDown={handleKeyDown}

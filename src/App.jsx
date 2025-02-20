@@ -36,6 +36,20 @@ function App() {
             ref={chatContainerRef}
             className="flex flex-col gap-5 py-4 px-8 pb-[280px] max-h-full overflow-y-auto"
           >
+
+            {chatHistory.length === 0 && (
+               <div className="flex gap-3">
+               <AiTexthead />
+               <div className="bg-white/10 backdrop-blur-md border border-white/10 text-white shadow-lg px-3 py-4 text-sm rounded-lg max-w-xs w-full min-h-[60px] flex items-center justify-center">
+                 <p>
+                   Hey there 👋, my name is Ploe <br /> your AI Text-Processor
+                   Chatbot. Need to detect a language, translate, or summarize
+                   a text? I'm here to help!
+                 </p>
+               </div>
+             </div>
+            )}
+            
             {chatHistory.map((chat, index) => (
               <ChatMessage key={index} chat={chat} />
             ))}
