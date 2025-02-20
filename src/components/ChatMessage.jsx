@@ -39,7 +39,7 @@ const ChatMessage = ({ chat }) => {
         <p>{chat.text}</p>
 
         {chat.role === "user" && chat.detectedLanguage && (
-          <p className="mt-2 text-gray-400 text-xs">
+          <p className="mt-2 text-black font-bold text-sm">
             Detected Language: <strong>{chat.detectedLanguage}</strong> (
             {chat.confidence}% sure)
           </p>
@@ -61,7 +61,7 @@ const ChatMessage = ({ chat }) => {
             
             <button
               className="text-xs text-white bg-black rounded-lg shadow-md p-2"
-              onClick={() => translateText(chat, selectedLanguage)} // Use selectedLanguage
+              onClick={() => translateText(chat, selectedLanguage)} 
             >
               Translate
             </button>
