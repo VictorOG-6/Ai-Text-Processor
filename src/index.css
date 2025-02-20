@@ -1,0 +1,19 @@
+@import "tailwindcss";
+
+body {
+  margin: 0;
+  background: linear-gradient(to bottom right, #0b1411, #101f18);
+  color: #fff;
+  padding: 0;
+  box-sizing: border-box;
+  scrollbar-width: thin;
+  scrollbar-color: #81f6ab transparent;
+}
+
+button {
+  cursor: pointer;
+}
+
+select {
+  cursor: pointer;
+}
